@@ -579,10 +579,9 @@ function renderGrid() {
 
     let dotsHtml = '';
     if (!serverClosed) {
-      for (let i = 0; i < MAX_VOTES; i++) {
         let cls = 'vote-dot';
-        if (i === 0 && isGold) cls += ' gold';
-        else if (i === 0 && isSelected) cls += ' active';
+        if (isGold) cls += ' gold';
+        else if (isSelected) cls += ' active';
         dotsHtml += `<div class="${cls}"></div>`;
       }
     }

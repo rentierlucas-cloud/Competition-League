@@ -551,8 +551,9 @@ function saveState() {
 function enterName() {
   const val = document.getElementById('name-input').value.trim();
   if (!val) return;
+
   currentUser = val;
-  fetch("https://script.google.com/macros/s/AKfycbwFboHT-ZcdS-yG_UpAXa3ralEv1Ouq5O2rBSdutMqxjrxGT-N1LeFPifZIxqhT9Wq1PA/exec?id=" + id);
+
   document.getElementById('name-screen').style.display = 'none';
   document.getElementById('current-name-display').textContent = currentUser.toUpperCase();
   render();

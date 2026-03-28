@@ -359,7 +359,7 @@
 
 <!-- HEADER -->
 <header>
-  <div class="league-label">⚡ Season 2 · Voting Phase</div>
+  <div class="league-label">⚡ Season 1 · Voting Phase</div>
   <h1>COMPETITION<br>LEAGUE</h1>
   <div class="subtitle">WÄHLE DEINE TOP 5 · EINE GOLDENE STIMME</div>
   <div class="status-bar">
@@ -499,33 +499,35 @@ const STORAGE_KEY = 'cl_voting_v2';
 // DEFAULT COMPETITIONS (fest im Code)
 // ══════════════════════════════════════════
 const DEFAULT_COMPETITIONS = [
-  { id: 'kart',        title: 'Kart',                      emoji: '🏎️',  imageData: null },
-  { id: 'battlekart',  title: 'Battlekart',                emoji: '⚔️',  imageData: null },
-  { id: 'tennis',      title: 'Tennis',                    emoji: '🎾',  imageData: null },
-  { id: 'padel',       title: 'Padel Tennis',              emoji: '🏸',  imageData: null },
-  { id: 'brettspiel',  title: 'Brettspielabend',           emoji: '🎲',  imageData: null },
-  { id: 'videogames',  title: 'Videogames',                emoji: '🎮',  imageData: null },
-  { id: 'advgolf',     title: 'Adventure Golf',            emoji: '⛳',  imageData: null },
-  { id: 'boule',       title: 'Boule',                     emoji: '🪨',  imageData: null },
-  { id: 'arcade',      title: 'Arcadehalle',               emoji: '🕹️',  imageData: null },
-  { id: 'bogen',       title: 'Bogenschießen',             emoji: '🏹',  imageData: null },
-  { id: 'escape',      title: 'Bas Rooms',                 emoji: '🔐',  imageData: null },
-  { id: 'bowling',     title: 'Bowling',                   emoji: '🎳',  imageData: null },
-  { id: 'billard',     title: 'Billard',                   emoji: '🎱',  imageData: null },
-  { id: 'tischtennis', title: 'Tischtennis',               emoji: '🏓',  imageData: null },
-  { id: 'lasertag',    title: 'Lasertag',                  emoji: '🔫',  imageData: null },
-  { id: 'bierpong',    title: 'Bierpong',                  emoji: '🍺',  imageData: null },
-  { id: 'kicker',      title: 'Kicker',                    emoji: '⚽',  imageData: null },
-  { id: 'quiz',        title: 'Quiz',                      emoji: '🧠',  imageData: null },
-  { id: 'curling',     title: 'Curling / Eisstockschießen',emoji: '🥌',  imageData: null },
-  { id: 'kirmes',      title: 'Kirmesbuden',               emoji: '🎠',  imageData: null },
-  { id: 'cornhole',    title: 'Cornhole',                  emoji: '🪣',  imageData: null },
-  { id: 'discgolf',    title: 'Disc Golf',                 emoji: '🥏',  imageData: null },
-  { id: 'shuffle',     title: 'Shuffleboard',              emoji: '🪃',  imageData: null },
-  { id: 'arrowtag',    title: 'Arrowtag',                  emoji: '🏹',  imageData: null },
-  { id: 'leitergolf',  title: 'Leitergolf',                emoji: '🪜',  imageData: null },
-  { id: 'fifa',        title: 'FIFA',                      emoji: '🕹️',  imageData: null },
-  { id: 'skeeball',    title: 'Skee Ball',                 emoji: '🎯',  imageData: null },
+  { id: 'kart',         title: 'Kart',                       emoji: '🏎️', image: 'images/kart.jpg' },
+  { id: 'battlekart',   title: 'Battlekart',                 emoji: '⚔️', image: 'images/battlekart.jpg' },
+  { id: 'tennis',       title: 'Tennis',                     emoji: '🎾', image: 'images/tennis.jpg' },
+  { id: 'padel',        title: 'Padel Tennis',               emoji: '🏸', image: 'images/padel.jpg' },
+  { id: 'brettspiel',   title: 'Brettspielabend',            emoji: '🎲', image: 'images/brettspiele.jpg' },
+  { id: 'videogames',   title: 'Videogames',                 emoji: '🎮', image: 'images/gaming abends.jpg' },
+  { id: 'advgolf',      title: 'Adventure Golf',             emoji: '⛳', image: 'images/adventure golf.jpg' },
+  { id: 'fussballgolf', title: 'Fußballgolf',                emoji: '⚽', image: 'images/fußballgolf.jpg' },
+  { id: 'boule',        title: 'Boule',                      emoji: '🪨', image: 'images/boule.jpg' },
+  { id: 'arcade',       title: 'Arcadehalle',                emoji: '🕹️', image: 'images/arcade halle.webp' },
+  { id: 'bogen',        title: 'Bogenschießen',              emoji: '🏹', image: 'images/bogenschießen.jpg' },
+  { id: 'escape',       title: 'Bas Rooms',                  emoji: '🔐', image: 'images/bash rooms.jpg' },
+  { id: 'bowling',      title: 'Bowling',                    emoji: '🎳', image: 'images/bowling.jpg' },
+  { id: 'billard',      title: 'Billard',                    emoji: '🎱', image: 'images/billiard.jpg' },
+  { id: 'tischtennis',  title: 'Tischtennis',                emoji: '🏓', image: 'images/tischtennis.jpg' },
+  { id: 'lasertag',     title: 'Lasertag',                   emoji: '🔫', image: 'images/lasertag.jpg' },
+  { id: 'bierpong',     title: 'Bierpong',                   emoji: '🍺', image: 'images/bierpong#.jpg' },
+  { id: 'darts',        title: 'Darts',                      emoji: '🎯', image: 'images/darts.jpg' },
+  { id: 'kicker',       title: 'Kicker',                     emoji: '⚽', image: 'images/kicker.jpg' },
+  { id: 'quiz',         title: 'Quiz',                       emoji: '🧠', image: 'images/quiz.jpg' },
+  { id: 'curling',      title: 'Curling / Eisstockschießen', emoji: '🥌', image: 'images/curling.jpg' },
+  { id: 'kirmes',       title: 'Kirmesbuden',                emoji: '🎠', image: 'images/kirmes.jpg' },
+  { id: 'cornhole',     title: 'Cornhole',                   emoji: '🪣', image: 'images/cornhole.jpg' },
+  { id: 'discgolf',     title: 'Disc Golf',                  emoji: '🥏', image: 'images/disc golf.jpg' },
+  { id: 'shuffle',      title: 'Shuffleboard',               emoji: '🪃', image: 'images/shuffleboard.jpg' },
+  { id: 'arrowtag',     title: 'Arrowtag',                   emoji: '🏹', image: 'images/arrowtag.jpg' },
+  { id: 'leitergolf',   title: 'Leitergolf',                 emoji: '🪜', image: 'images/leitergolf.jpg' },
+  { id: 'fifa',         title: 'FIFA',                       emoji: '🎮', image: 'images/fifa.jpg' },
+  { id: 'skeeball',     title: 'Skee Ball',                  emoji: '🎯', image: 'images/skee ball.jpg' },
 ];
 
 let state = loadState();
@@ -689,8 +691,8 @@ function renderGrid() {
       + (!canVote && !isSelected ? ' disabled' : '');
     if (!state.closed) card.onclick = () => handleVote(comp.id, card);
 
-    const imgHtml = comp.imageData
-      ? `<img class="comp-img" src="${comp.imageData}" alt="${comp.title}" />`
+    const imgHtml = (comp.image || comp.imageData)
+      ? `<img class="comp-img" src="${comp.image || comp.imageData}" alt="${comp.title}" />`
       : `<div class="comp-img-placeholder">${comp.emoji || '🏆'}</div>`;
 
     // dots: only show own selection state, never aggregate counts
@@ -934,8 +936,8 @@ function renderAdminCompList() {
   state.competitions.forEach(comp => {
     const item = document.createElement('div');
     item.className = 'admin-comp-item';
-    const thumb = comp.imageData
-      ? `<img src="${comp.imageData}" alt="" />`
+    const thumb = (comp.image || comp.imageData)
+      ? `<img src="${comp.image || comp.imageData}" alt="" />`
       : `<div class="emoji-thumb">${comp.emoji}</div>`;
     item.innerHTML = `
       ${thumb}

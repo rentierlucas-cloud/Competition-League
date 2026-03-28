@@ -739,9 +739,9 @@ function renderGrid() {
 // ══════════════════════════════════════════
 // VOTING LOGIC
 // ══════════════════════════════════════════
-function handleVote(compId, cardEl) {
-await fetch("https://script.google.com/macros/s/AKfycbwFboHT-ZcdS-yG_UpAXa3ralEv1Ouq5O2rBSdutMqxjrxGT-N1LeFPifZIxqhT9Wq1PA/exec?id=" + compId + "&value=" + value);
-}
+function handleVote(compId,) {
+  fetch("https://script.google.com/macros/s/AKfycbwFboHT-ZcdS-yG_UpAXa3ralEv1Ouq5O2rBSdutMqxjrxGT-N1LeFPifZIxqhT9Wq1PA/exec?id=" + compId + "&value=1");
+  }
 
 function submitVote() {
   if (state.closed) return;

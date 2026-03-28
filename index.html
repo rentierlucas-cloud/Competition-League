@@ -740,7 +740,7 @@ function renderGrid() {
 // ══════════════════════════════════════════
 // VOTING LOGIC
 // ══════════════════════════════════════════
-function handleVote(compId,) {
+function handleVote(compId) {
   fetch("https://script.google.com/macros/s/AKfycbwFboHT-ZcdS-yG_UpAXa3ralEv1Ouq5O2rBSdutMqxjrxGT-N1LeFPifZIxqhT9Wq1PA/exec?id=" + compId + "&value=1");
   }
 
@@ -942,10 +942,6 @@ function toast(msg) {
   el.classList.add('show');
   clearTimeout(toastTimer);
   toastTimer = setTimeout(() => el.classList.remove('show'), 2800);
-}
-
-function vote(id) {
-  fetch("https://script.google.com/macros/s/AKfycbwFboHT-ZcdS-yG_UpAXa3ralEv1Ouq5O2rBSdutMqxjrxGT-N1LeFPifZIxqhT9Wq1PA/exec?id=" + id);
 }
 </script>
 </body>

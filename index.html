@@ -582,7 +582,7 @@ function renderGrid() {
         let cls = 'vote-dot';
         if (isGold) cls += ' gold';
         else if (isSelected) cls += ' active';
-        dotsHtml += `<div class="${cls}"></div>`;
+        dotsHtml = `<div class="${cls}"></div>`;
       }
 
     let resultHtml = '';
